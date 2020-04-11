@@ -1,4 +1,4 @@
-img=imread('/Users/grigoriy/Desktop/Mogzilla.jpg');  
+img=imread('/Users/dilya/Desktop/input.jpg');  
 i = rgb2gray(img);
 b=4;w=251;
 img_with_noise= i; 
@@ -11,6 +11,6 @@ subplot(1, 2, 1);
 imshow(img_with_noise);
 %---------------Выше добавили шум в изображение (соль и перец)
 
-algoResult = wienerAlgoritm(img_with_noise, [5 5]);
+algoResult = wienerAlgoritm(img_with_noise, [10 10]);
 subplot(1, 2, 2);
 imshow(algoResult);
